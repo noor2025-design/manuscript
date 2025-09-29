@@ -4,11 +4,126 @@ html {
 
 body {
         font-family:'Lexend', sans-serif;
+        font-weight: 300;
         color:#d6ef84;
         background-color:#40554b;
+        padding: 0;
+        margin: 0;
+        position: relative;
+}
+
+p {
+        font-family:'Lexend', sans-serif;
+        font-weight: 300;
+       
 }
     
 header {
         font-family: 'Boldonse', sans-serif;
         color: #d6ef84;
-        }    
+        text-align: center;
+        padding: 2%;
+        padding-inline: 22%;
+        } 
+        
+h1 {
+        font-size: 6rem;
+        text-transform: uppercase;
+        /* background-color: red; */
+
+}
+
+.subtitle {
+        font-size: 3rem;
+        text-transform: uppercase;
+         /* background-color: blue; */
+         margin-block-start: -5rem;
+}
+
+.author-quote {
+     font-size: 2rem;
+     padding: 3rem;
+     padding-inline: 22%;
+    
+}
+
+
+h2, .author, .author2 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+}
+
+.author2 {
+        padding-block-start: 4rem;
+}
+
+
+a { color: #d6ef84;text-decoration: none;
+
+}
+
+#my-response h2{
+margin-block-start: 10rem;
+}
+
+#my-response, .highlight, #original-article {
+        padding: 2%;
+        padding-inline: 22%;
+}
+
+blockquote {
+        padding: 1.5rem;
+}
+
+blockquote p {
+        font-weight: 700;
+        font-size: 1.5rem;
+} 
+
+li {
+        padding-block: 0.25rem;
+}
+
+ul {
+        margin-block-end: 6rem;
+}
+
+footer {
+        background-color: #d6ef84;
+        color:#40554b;
+        width: 100%;
+        position: absolute;
+        bottom: 0rem;
+        padding-inline-start: 1%;
+        height: 3rem;
+}
+
+footer p {
+         font-weight: 700;
+        font-family: 'Boldonse', sans-serif;
+}
+
+.footer-link2 {
+        position: absolute;
+        top: -0.5rem;
+        inset-inline-end: 1%;
+        padding-inline-end: 1%;
+        color:#40554b;
+        /* background-color: green; */
+}
+
+.footer-link1 {
+        position: absolute;
+        top: -0.5rem;
+        inset-inline-end: 10rem;
+        padding-inline-end: 1%;
+
+        color:#40554b;
+        /* background-color: green; */
+}
+
+footer a {
+        color:#40554b;
+}
+
