@@ -1,3 +1,6 @@
+:root{
+        font-size:125%;
+}
 html {
         color: tomato;
 }
@@ -14,7 +17,7 @@ body {
 
 p {
         font-family:'Lexend', sans-serif;
-        font-weight: 300;
+        font-weight: 300;padding-block: 1rem;
        
 }
     
@@ -30,14 +33,15 @@ h1 {
         font-size: 6rem;
         text-transform: uppercase;
         /* background-color: red; */
+}       
 
-}
 
 .subtitle {
         font-size: 3rem;
         text-transform: uppercase;
          /* background-color: blue; */
-         margin-block-start: -5rem;
+         margin-block-start: -2rem;
+         font-weight: 700;
 }
 
 .author-quote {
@@ -87,26 +91,29 @@ li {
 
 ul {
         margin-block-end: 6rem;
+        list-style-type: disc;
 }
 
 footer {
-        background-color: #d6ef84;
         color:#40554b;
         width: 100%;
-        position: absolute;
-        bottom: 0rem;
+        position: fixed;
         padding-inline-start: 1%;
         height: 3rem;
+        inset-block-end: 0px; 
+        background: linear-gradient(#d6ef84, #a2c335);
+
 }
 
 footer p {
          font-weight: 700;
         font-family: 'Boldonse', sans-serif;
+        padding-block-start: 0.5rem;
 }
 
 .footer-link2 {
         position: absolute;
-        top: -0.5rem;
+        inset-block-end: -0.3rem;
         inset-inline-end: 1%;
         padding-inline-end: 1%;
         color:#40554b;
@@ -115,7 +122,7 @@ footer p {
 
 .footer-link1 {
         position: absolute;
-        top: -0.5rem;
+        inset-block-end: -0.3rem;
         inset-inline-end: 10rem;
         padding-inline-end: 1%;
 
