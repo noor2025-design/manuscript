@@ -142,13 +142,12 @@ footer {
         flex-direction: column-reverse;
 }
 footer p:first-child{
-        align-self:center;
-        padding-block-end: 1rem;
+        align-self:center ;
 }
 footer p {
         font-weight: 700;
         font-family: var(--primary-font);
-        
+        padding-block-start: 1rem;
 
 }
 
@@ -156,7 +155,6 @@ footer p {
         display: flex;
         justify-content: space-between;
         margin-inline: 20%;
-        padding-block-start: 1rem;
         /* flex-direction: column; */
 }
 
@@ -187,16 +185,11 @@ footer a {
         footer {
                 flex-direction: row;
                 justify-content: space-between;
-                padding-block: 1rem;
         }
 
         #footer-links {
                 margin-right: 2rem;
                 justify-content: space-between;
                 gap: 0 1rem;
-                 padding-block-start: 0rem;
         }
-        footer p:first-child{
-        padding-block-end: 0rem;
-}
 }
