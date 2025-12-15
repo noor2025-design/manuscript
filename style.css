@@ -65,9 +65,7 @@ h1 {
         color: #EC368D;
         position: relative;
         align-self: center;
-        width: 70%;
         left: 0;
-        min-width: 250px;
         /* margin-left: 3rem; */
 
 }
@@ -113,9 +111,16 @@ h2,
 
 
 a {
-        color: var(--primary-text-color);
         text-decoration: none;
 
+}
+
+footer a {
+       color: var(--primary-text-color); 
+}
+
+#article-link{
+        color: #EC368D;
 }
 
 #my-response h2 {
@@ -124,7 +129,7 @@ a {
 
 main {
         padding: 2%;
-        padding-inline: 22%;
+        padding-inline: 11%;
 }
 .highlight{
         display: flex;
@@ -231,8 +236,10 @@ footer p {
         }
         #author-quote {
         left: 3rem;
-         min-width: 500px;
 
-
+}
+main {
+        padding: 2%;
+        padding-inline: 22%;
 }
 }
