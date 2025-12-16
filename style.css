@@ -83,7 +83,7 @@ h1 {
 
 #author-first-blockquote {
         color: #FFC145;
-        position:relative;
+        position: relative;
 }
 
 #author-first-blockquote::before {
@@ -116,10 +116,10 @@ a {
 }
 
 footer a {
-       color: var(--primary-text-color); 
+        color: var(--primary-text-color);
 }
 
-#article-link{
+#article-link {
         color: #EC368D;
 }
 
@@ -131,7 +131,8 @@ main {
         padding: 2%;
         padding-inline: 11%;
 }
-.highlight{
+
+.highlight {
         display: flex;
         flex-direction: column;
         /* align-items: center; */
@@ -187,13 +188,14 @@ footer {
 #class-title {
         align-self: center;
         font-size: 16px;
-
+        padding-block: 1rem 1.5rem !important;
 }
+
 
 footer p {
         font-weight: 700;
         font-family: var(--primary-font);
-        padding-block-start: 1.5rem;
+
 
 }
 
@@ -207,17 +209,19 @@ footer p {
 
 .footer-link1,
 .footer-link2 {
-
+        padding-block-start: 1.5rem;
         /* inset-block-end: -0.3rem;
         inset-inline-end: 1%;
         padding-inline-end: 1%; */
         color: var(--primary-text-color);
         white-space: nowrap;
+        font-size: 16px;
         /* background-color: green; */
 }
 
 @media screen and (min-width: 480px) {
-        #class-title {
+        #class-title,  .footer-link1,
+        .footer-link2 {
                 font-size: 20px;
         }
 }
@@ -228,18 +232,29 @@ footer p {
                 justify-content: space-between;
         }
 
+        #class-title {
+                padding-block: 1rem !important;
+        }
+
         #footer-links {
                 margin-inline: 0rem;
                 margin-right: 2rem;
                 justify-content: space-between;
                 gap: 0 1rem;
         }
-        #author-quote {
-        left: 3rem;
 
-}
-main {
-        padding: 2%;
-        padding-inline: 22%;
-}
+        .footer-link1,
+        .footer-link2 {
+                padding-block: 1rem;
+        }
+
+        #author-quote {
+                left: 3rem;
+
+        }
+
+        main {
+                padding: 2%;
+                padding-inline: 22%;
+        }
 }
