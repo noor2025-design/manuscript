@@ -39,18 +39,15 @@ header {
 
 h1 {
         color: var(--primary-text-color);
-        font-size: 6rem;
-        /* text-transform: uppercase; */
-        /* background-color: red; */
+        font-size: 2.75rem;
+       
 }
 
 
 .subtitle {
         color: var(--primary-text-color);
-        font-size: 3rem;
+        font-size: 1.75rem;
         align-items: flex-start;
-        /* text-transform: uppercase; */
-        /* background-color: blue; */
         margin-block-start: -2rem;
         font-weight: 700;
         display: flex;
@@ -84,6 +81,7 @@ h1 {
 #author-first-blockquote {
         color: #FFC145;
         position: relative;
+        padding: 1.5rem 1.5rem 1.5rem 3rem;
 }
 
 #author-first-blockquote::before {
@@ -95,6 +93,12 @@ h1 {
         background: linear-gradient(to top, #EC368D, #ffc145);
         height: 45%;
         width: 3px;
+}
+
+h2 {
+        display: flex;
+        flex-direction: column;
+        margin-block: 3rem 1rem;
 }
 
 h2,
@@ -115,16 +119,61 @@ a {
 
 }
 
+#section-box {
+        border: 2px solid;
+        border-radius: 12px;
+        border-image: linear-gradient(90deg, #ec368d, #ffc145) 1;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 700px;
+        margin: 3rem auto;
+        gap: 1rem;
+}
+
+#section-box ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .75rem 2.5rem;
+        padding-left: 1rem;
+        margin: 0;
+        font-family: var(--header-blockquote-font);
+
+}
+
+#section-box ul li:nth-child(1)::marker {
+        color: #EC368D;
+}
+
+#section-box ul li:nth-child(2)::marker {
+        color: #ffc145;
+}
+
+#section-box ul li:nth-child(3)::marker {
+        color: #EC368D;
+}
+
 footer a {
         color: var(--primary-text-color);
 }
 
 #article-link {
         color: #EC368D;
+        text-transform: uppercase;
 }
 
-#my-response h2 {
-        margin-block-start: 10rem;
+#my-response h4 {
+        margin-block-start: 2rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+}
+
+#my-response p:last-child {
+        margin-bottom: 200px;
 }
 
 main {
@@ -150,8 +199,7 @@ blockquote p {
 
 }
 
-.reflection-blockquote,
-#final-reflection {
+.reflection-blockquote {
         background: linear-gradient(to top, #EC368D, #ffc145);
         -webkit-background-clip: text;
         background-clip: text;
@@ -165,11 +213,6 @@ li {
 ul {
         margin-block-end: 6rem;
         list-style-type: disc;
-}
-
-#final-reflection {
-        margin-bottom: 3rem;
-        font-family: var(--header-blockquote-font);
 }
 
 
@@ -220,13 +263,33 @@ footer p {
 }
 
 @media screen and (min-width: 480px) {
-        #class-title,  .footer-link1,
+        h1 {
+                font-size: 3.5rem;
+        }
+
+        .subtitle {
+
+                font-size: 2.25rem;
+        }
+
+        #class-title,
+        .footer-link1,
         .footer-link2 {
                 font-size: 20px;
         }
 }
 
 @media screen and (min-width: 768px) {
+        h1 {
+                font-size: 6rem;
+        }
+
+
+        .subtitle {
+
+                font-size: 3rem;
+        }
+
         footer {
                 flex-direction: row;
                 justify-content: space-between;
