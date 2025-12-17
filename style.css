@@ -136,11 +136,13 @@ a {
 #section-box ul {
         display: flex;
         flex-wrap: wrap;
+        white-space: nowrap;
         justify-content: center;
         gap: .75rem 2.5rem;
         padding-left: 1rem;
         margin: 0;
         font-family: var(--header-blockquote-font);
+        font-size: 16px;
 
 }
 
@@ -165,6 +167,9 @@ footer a {
         text-transform: uppercase;
 }
 
+#my-response{
+        padding-block-start: 2rem;
+}
 #my-response h4 {
         margin-block-start: 2rem;
         text-transform: uppercase;
@@ -172,7 +177,7 @@ footer a {
         font-weight: 700;
 }
 
-#my-response p:last-child {
+#my-response > p:last-child {
         margin-bottom: 200px;
 }
 
@@ -204,6 +209,19 @@ blockquote p {
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+        position: relative;
+        
+}
+
+.reflection-blockquote::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: linear-gradient(to top, #EC368D, #ffc145);
+        height: 45%;
+        width: 3px;
 }
 
 li {
@@ -220,7 +238,6 @@ footer {
         color: var(--primary-text-color);
         width: 100%;
         position: fixed;
-        padding-inline-start: 1%;
         inset-block-end: 0px;
         background: #EC368D;
         background: linear-gradient(90deg, rgba(236, 54, 141, 1) 0%, rgba(255, 193, 69, 1) 100%);
@@ -277,6 +294,8 @@ footer p {
         .footer-link2 {
                 font-size: 20px;
         }
+        #section-box ul {
+        font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -293,6 +312,7 @@ footer p {
         footer {
                 flex-direction: row;
                 justify-content: space-between;
+                padding-inline-start: 2%;
         }
 
         #class-title {
