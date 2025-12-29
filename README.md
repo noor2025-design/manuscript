@@ -1,7 +1,7 @@
 # Noor Abdussaboor - Typography and Interaction 01
 ## Manuscript | Gradients Response to Daisy Alioto
 ### Project Overview
-This is a project called Manuscript which is my first assignment for Typography and Interaction 1 class in typsetting in HTML & CSS in the MPS Communication Design program at Parsons School of Design, The New School, Fall 2025. The goal of this project was to typset a written respons using HTML and CSS focusing on typographic hiearchy, readability, spacing, and basic interaction on the web. The assignment asked us to translate a written text into a structred, web-based layout while considering how typogrpahy functions differently on screen compared to print. 
+This is a project called Manuscript which is my first assignment for Typography and Interaction 1 class in typsetting in HTML & CSS in the MPS Communication Design program at Parsons School of Design, The New School, Fall 2025. The goal of this project was to typset a written response using HTML and CSS focusing on typographic hiearchy, readability, spacing, and basic interaction on the web. The assignment asked us to translate a written text into a structured, web-based layout while considering how typogrpahy functions differently on screen compared to print. 
 ## Source Text
 Article
 Gradients: The Colorful Design Trend Aiming to Soothe These Anxious Times
